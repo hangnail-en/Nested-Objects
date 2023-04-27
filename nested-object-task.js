@@ -1,7 +1,7 @@
 const spaceship = {
   passengers:
     {
-    names: ["Sandra", "Vagabond"],
+    names: ["Sandra", "Vagabond"],          // Assigned an array as a key value, one of which will be accessed later
     totalCount: 2,
     },
   telescope: {
@@ -34,8 +34,8 @@ const spaceship = {
   },
 };
 
-let capFave = spaceship.crew.captain['favorite foods'][0];
+let capFave = spaceship.crew.captain['favorite foods'][0];          // Accesses the spaceship variable > the "crew" object > the "captain" nested object > the "favorite foods" object > first value in the array
 console.log(capFave);
 
-let firstPassenger = spaceship.passengers['names'][0];
+let firstPassenger = spaceship.passengers.names[0];                 // Accesses the spaceship variable > the "passengers" object > the "names" nested object (not in a bracket since there are no spaces in the  >
 console.log(firstPassenger);
